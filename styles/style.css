@@ -6,5 +6,50 @@
     Cor 02: #E16C5B
     Cor 03: #E9614B
     Cor 04: #FFF5FD
-    Cor 04: #022124
+    Cor 05: #022124
 */
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: #0B2B3A;
+    height: 100vh;
+    width: 100vw;
+    color: #022124;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    background-color: #FFF5FD;
+    width: 260px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px white;
+}
+
+section#login > div#imagem {
+    display: block;
+    background: #0B2B3A url('../imagens/pexels-landscape.jpg') no-repeat center center;
+    height: 200px;
+    background-size: cover;
+}
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
+}
