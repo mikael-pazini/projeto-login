@@ -23,6 +23,10 @@ body, html {
     color: #022124;
 }
 
+body{
+    position: absolute;
+}
+
 main {
     position: relative;
     height: 100vh;
@@ -30,7 +34,7 @@ main {
 }
 
 p {
-    margin: 10px 0px 0px 10px;
+    margin: 5px 0px 0px 10px;
 }
 
 section#login {
@@ -80,6 +84,27 @@ form > div.campo {
 
 div.campo > label {
     display: none;
+}
+
+div.campo > span {
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: white;
+    font-size: 1em;
+    width: calc(100% - 55px);
+    height: 100%;
+    border: 0px;
+    border-radius: 10px;
+    padding: 4px;
+    transform: translateY(-10px);
+}
+
+div.campo > input:focus-within {
+    background-color: white;
 }
 
 form > input[type=submit] {
